@@ -9,10 +9,13 @@ The levels are unlimited as of right now, but I doubt anyone will have the patie
 ------------------------------
 Commands:
 [p] pause game
+
 [c] continue game (while paused)
+
 [q] quit game     (while paused)
 
 [enter] restart game after game over
 
 [right arrow] move right
+
 [left  arrow] move left
