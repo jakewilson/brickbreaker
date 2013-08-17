@@ -22,40 +22,42 @@ class Platform {
   
   //move the platform
   void move() {
-   if (keyPressed) {
-    if (key == CODED)
-     if (keyCode == RIGHT)
-      moveRight();
-     if (keyCode == LEFT)
-      moveLeft();
-   } 
+    if (keyPressed) {
+      if (key == CODED) {
+        if (keyCode == RIGHT)
+          moveRight();     
+          
+        if (keyCode == LEFT)
+          moveLeft();
+      }
+    } 
   }
   
   //move the platform to the right
   void moveRight() {
-   if (this.location.x + pWidth <= width - 25)
-    location.x += 5;
+    if (this.location.x + pWidth <= width - 25)
+      location.x += 5;
   }
   
   //move the platform to the left
   void moveLeft() {
-   if (this.location.x >= 25)
-    location.x -= 5;
+    if (this.location.x >= 25)
+      location.x -= 5;
   }
   
   //return the location
   Vector getLocation() {
-   return location; 
+    return location; 
   }
   
   //return the width
   float getWidth() {
-   return pWidth; 
+    return pWidth; 
   }
   
   //return the length
   float getLength() {
-   return pLength; 
+    return pLength; 
   }
   
   //return the platform to it's starting position - in the middle of the screen
@@ -65,7 +67,7 @@ class Platform {
   
   //set the location
   void setLocation(Vector v) {
-   this.location = v; 
+    this.location = v; 
   }
   
  
